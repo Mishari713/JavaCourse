@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    flex-direction: column;
+    position: relative;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+.light-mode {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.counter-container {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.counter {
+    font-size: 160px;
+    font-weight: bold;
+    color: inherit;
+    margin: 0;
+    user-select: none;
+    pointer-events: none;
+}
+
+input {
+    padding: 10px;
+    font-size: 18px;
+    width: 80px;
+    text-align: center;
+    margin-bottom: 20px;
+    border: none;
+    outline: none;
+}
+
+button {
+    font-size: 36px;
+    padding: 20px 40px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+}
+
+button:hover {
+    background-color: #333;
+}
+
+.minus-button {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: black;
+}
+
+.plus-button {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: black;
+}
+
+.theme-toggle {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 32px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 30px;
+}
+
+.theme-toggle:hover {
+    background-color: #333;
+}
+
+.goal {
+    font-size: 28px;
+    color: inherit;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+.reset-button {
+    margin-left: 10px;
+    font-size: 18px;
+    padding: 10px;
+    background-color: #e74c3c;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.reset-button:hover {
+    background-color: #c0392b;
+}
